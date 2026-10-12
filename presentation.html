@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>경기청_5강_전문법칙</title>
+
+<!-- ─────────────────────────────────────────────
+  AI Context Header — self-describing deck
+  이 파일은 외부 AI에게 전달되어도 단독으로 분석 가능해야 함.
+  - 슬라이드 = <section class="slide type-*"> 요소
+  - 정확한 슬라이드 수는 head의 <script id="deckManifest">.slideCount 참고
+  - 테마 토큰은 theme.css의 :root 변수 참조
+  - 스캐폴드 출처: investigation-noir (P3R 영감 · 누아르/수사물 톤)
+───────────────────────────────────────────── -->
+
+<meta name="deck:scaffold" content="investigation-noir">
+<meta name="deck:slide-count" content="29">
+
+<script type="application/json" id="deckManifest">
+{
+  "deck_title": "경기청_5강_전문법칙",
+  "scaffold": "investigation-noir",
+  "slide_count": 29,
+  "chapter_count": 4,
+  "slides": [
+    {
+      "index": 0,
+      "type": "title",
+      "title": "디지털포렌식과 형사소송법"
+    },
+    {
+      "index": 1,
+      "type": "toc",
+      "title": "목차"
+    },
+    {
+      "index": 2,
+      "type": "content",
+      "title": "학습목표"
+    },
+    {
+      "index": 3,
+      "type": "chapter",
+      "title": "진술증거, 전문증거"
+    },
+    {
+      "index": 4,
+      "type": "visual",
+      "title": "증거능력 vs 증명력"
+    },
+    {
+      "index": 5,
+      "type": "content",
+      "title": "전문증거란 무엇인가?"
+    },
+    {
+      "index": 6,
+      "type": "visual",
+      "title": "증거능력의 법률 규정"
+    },
+    {
+      "index": 7,
+      "type": "visual",
+      "title": "속기사가 작성한 녹취문서는?"
+    },
+    {
+      "index": 8,
+      "type": "visual",
+      "title": "녹취록은 반드시 전문증거인가"
+    },
+    {
+      "index": 9,
+      "type": "content",
+      "title": "포렌식 증거와 전문증거"
+    },
+    {
+      "index": 10,
+      "type": "chapter",
+      "title": "전문증거와 전자증거"
+    },
+    {
+      "index": 11,
+      "type": "visual",
+      "title": "전문증거와 비전문증거"
+    },
+    {
+      "index": 12,
+      "type": "visual",
+      "title": "대법원 선고 99도2317 판결"
+    },
+    {
+      "index": 13,
+      "type": "visual",
+      "title": "생성증거, 보관증거. 용어가 어려워요?"
+    },
+    {
+      "index": 14,
+      "type": "visual",
+      "title": "생성증거와 보관증거"
+    },
+    {
+      "index": 15,
+      "type": "chapter",
+      "title": "전자증거의 특징"
+    },
+    {
+      "index": 16,
+      "type": "visual",
+      "title": "도서관 전경"
+    },
+    {
+      "index": 17,
+      "type": "visual",
+      "title": "전자 증거의 특징"
+    },
+    {
+      "index": 18,
+      "type": "visual",
+      "title": "디지털 포렌식을 방해하는 현장 요소"
+    },
+    {
+      "index": 19,
+      "type": "visual",
+      "title": "디지털 포렌식을 방해하는 현장 요소"
+    },
+    {
+      "index": 20,
+      "type": "visual",
+      "title": "디지털 포렌식을 방해하는 현장 요소"
+    },
+    {
+      "index": 21,
+      "type": "chapter",
+      "title": "디지털 포렌식의 목표"
+    },
+    {
+      "index": 22,
+      "type": "visual",
+      "title": "디지털 포렌식의 5원칙"
+    },
+    {
+      "index": 23,
+      "type": "visual",
+      "title": "디지털 포렌식의 5원칙"
+    },
+    {
+      "index": 24,
+      "type": "visual",
+      "title": "디지털 포렌식의 신뢰성에 대한 판례의 입장"
+    },
+    {
+      "index": 25,
+      "type": "visual",
+      "title": "신뢰형성을 위한 환경 조성"
+    },
+    {
+      "index": 26,
+      "type": "visual",
+      "title": "예고: 디지털 포렌식 기술 소개"
+    },
+    {
+      "index": 27,
+      "type": "qa",
+      "title": "FnQ"
+    },
+    {
+      "index": 28,
+      "type": "closing",
+      "title": "감사합니다"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+
+<link rel="stylesheet" href="theme.css">
+
+<style>
+  /* 슬라이드 네비게이션 (프로토타입) */
+  html, body { overflow: hidden; }
+  body { background: #000; --body-scale: 1.5; }
+
+  /* 본문 글자 크기 조절 — 편집기 '덱 설정 > 본문 글자 크기'가 --body-scale 을 주입.
+     theme.css(위의 <link>) 뒤에 와서 본문 계열 font-size만 덮어쓴다(제목류 제외).
+     값 누락 시 var fallback=1 → 외관 불변. 기준값은 전 테마 공통.
+     --auto-boost 는 좁은(모바일형) 화면에서 fitCanvas()가 자동으로 키움. */
+  .content-body        { font-size: calc(1.4rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .summary-lead        { font-size: calc(1.4rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .summary-points li   { font-size: calc(1.25rem * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .visual-figure table { font-size: calc(1.1rem  * var(--body-scale, 1) * var(--auto-boost, 1)); }
+  .visual-caption      { font-size: calc(0.95rem * var(--body-scale, 1) * var(--auto-boost, 1)); }
+
+  /* 고정 캔버스(1600x900, 16:9) + 화면에 맞춰 축소/레터박스.
+     기기 종류를 감지하지 않고, 실제 뷰포트 비율로 판단(창 크기 조절·폴더블도 정확히 대응). */
+  .deck {
+    position: fixed; top: 50%; left: 50%;
+    width: 1600px; height: 900px;
+    transform: translate(-50%, -50%) scale(var(--canvas-scale, 1));
+    transform-origin: center center;
+  }
+  .deck > .slide {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    pointer-events: none;
+  }
+  .deck > .slide.active {
+    opacity: 1; visibility: visible;
+    pointer-events: auto;
+  }
+  .nav {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    z-index: 100; display: flex; gap: 0.5rem;
+    font-family: 'Inter', sans-serif; font-size: 0.7rem;
+    color: rgba(255,255,255,0.6);
+  }
+  .nav button {
+    background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.3);
+    color: white; padding: 0.4em 0.9em; cursor: pointer;
+    font-family: inherit; letter-spacing: 0.2em;
+  }
+  .nav button:hover { background: rgba(255,255,255,0.1); }
+</style>
+</head>
+<body>
+
+<div class="deck">
+<section class="slide type-title" data-slide-type="title">
+
+  <div class="wordmark">START</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="title-hero">
+    <div class="title-kicker">PRESENTATION</div>
+    <h1 class="title-ko">디지털포렌식과 형사소송법</h1>
+    <div class="divider"></div>
+    <div class="title-en">제5장 전문법칙과 전문증거</div>
+    <p class="title-sub">피의자가 법정에서 직접 발언하지 않은 진술의 증거능력</p>
+  </div>
+
+  <div class="title-byline">
+    <span class="author">부산지방고용노동청 광역노동기준감독과</span>
+    <span class="sep"></span>
+    <span class="date">2026.00.00</span>
+  </div>
+
+  <div class="signature"></div>
+
+</section>
+
+<section class="slide type-toc" data-slide-type="toc">
+
+  <div class="wordmark">INDEX</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="toc-head">
+    <div class="heading-en">Contents</div>
+    <h2 class="heading-ko">목차</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <ol class="toc-list">
+    <li class="toc-item" style="--i: 0;">
+  <span class="toc-num">01</span>
+  <span class="toc-text">
+    <span class="toc-ko">진술증거, 전문증거</span>
+    <span class="toc-en">The evidence of hearsay</span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 1;">
+  <span class="toc-num">02</span>
+  <span class="toc-text">
+    <span class="toc-ko">전문증거와 전자증거</span>
+    <span class="toc-en"></span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 2;">
+  <span class="toc-num">03</span>
+  <span class="toc-text">
+    <span class="toc-ko">전자증거의 특징</span>
+    <span class="toc-en"></span>
+  </span>
+</li>
+
+<li class="toc-item" style="--i: 3;">
+  <span class="toc-num">04</span>
+  <span class="toc-text">
+    <span class="toc-ko">디지털 포렌식의 목표</span>
+    <span class="toc-en"></span>
+  </span>
+</li>
+
+  </ol>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 10%;">
+    <span class="now">C.00</span>
+    <span class="total"> · 03/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en">Heading</div>
+      <h2 class="heading-ko">학습목표</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>전문증거에 대해 이해한다</li><li>아티팩트에 대해 이해한다</li></ul>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 25%;">
+    <span class="now">01</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">01</span>
+    </div>
+    <div class="chapter-title">진술증거, 전문증거</div>
+    <div class="divider"></div>
+    <div class="chapter-en">The evidence of hearsay</div>
+  </div>
+
+  <div class="signature">chapter // 01 of 04</div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 17%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 05/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">증거능력 vs 증명력</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림1.png" style="width: 100%;">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 20%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 06/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en">The evidence of hearsay</div>
+      <h2 class="heading-ko">전문증거란 무엇인가?</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>제310조의2(전문증거와 증거능력의 제한)</li><li><strong>제311조 내지 제316조</strong>에 규정한 것 이외에는 공판준비 또는 공판기일에서의 진술에 대신하여 <strong>진술을 기재한 서류</strong>나 공판준비 또는 공판기일 외에서의 <strong>타인의 진술을 내용으로 하는 진술</strong>은 이를 증거로 할 수 없다.</li></ul><table class="pres-table"><tbody><tr><td>진술서</td></tr><tr><td>타인의 발언을 기억한 발언</td></tr><tr><td>공판 이외</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 24%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 07/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">증거 재판주의의 원칙</div>
+    <h2 class="heading-ko">증거능력의 법률 규정</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림6.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 27%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 08/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">속기사가 작성한 녹취문서는?</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <table class="pres-table"><thead><tr><th>녹취록</th><th>본인작성</th><th>속기사</th><th>수사관</th></tr></thead><tbody><tr><td>작성자 확인<br></td><td>가능(본인)</td><td>가능(속기사)</td><td>가능(수사관)</td></tr><tr><td>작성자 의도</td><td>본인 의도</td><td>본인 대리</td><td>수사관 의도</td></tr><tr><td>증거능력</td><td>313조<br>(진술서 등)</td><td>313조<br>(진술서 등)</td><td><b>검증영장&gt;검증조서<br>수사보고&gt;증거x</b></td></tr><tr><td>전문증거 여부</td><td>o<br>(본인의 공판 이외 발언)</td><td>o<br>(녹취를 듣고 적은 것)</td><td>o<br>(녹취를 듣고 적은 것)</td></tr><tr><td>서명, 날인 여부</td><td>가능(본인)</td><td>가능(속기사, 본인 등)</td><td>어려움</td></tr></tbody></table>
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 31%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 09/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">대법원 선고 2013도2511 판결 등 </div>
+    <h2 class="heading-ko">녹취록은 반드시 전문증거인가</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <!--smartart-src:eyJzbHVnIjogImNoYXJ0MyIsICJvdXRsaW5lIjogIuyghOusuOymneqxsFxuICDrjIDtmZTrgrTsmqnsnZgg7KeE7Iuk7ISx7J20IOymneuqheydmCDrjIDsg4FcbiAg64yA7ZmU7J2YIOydmOuPhCDtmZXsnbhcbuu5hOyghOusuOymneqxsFxuICDqsITsoJHsgqzsi6Tsl5Ag64yA7ZWcIOygle2ZqeymneqxsOuhnCDtmZzsmqlcbiAg67Cc7Ja47ZWcIOyCrOyLpCDsnpDssrTrpbwg7J6F7KadIiwgInNjaGVtZSI6IG51bGwsICJmb250X3NjYWxlIjogMS4wfQ==-->
+
+<style>
+.smartart-stage { position: relative; width: 100%; height: 100%; }
+.smartart-node {
+  position: absolute; box-sizing: border-box; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  container-type: size;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.smartart-node.is-decor { opacity: 0.55; box-shadow: none; }
+/* 상위(data-lvl=0)는 진하고 또렷하게, 하위로 갈수록 살짝 밝고 채도 낮게 + 그림자 약하게 — 위계가 눈에 보이도록 */
+.smartart-node[data-lvl="1"] { filter: brightness(1.12) saturate(0.85); box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+.smartart-node[data-lvl="2"] { filter: brightness(1.22) saturate(0.72); box-shadow: 0 1px 5px rgba(0,0,0,0.10); }
+.smartart-node[data-lvl="1"] .smartart-label, .smartart-node[data-lvl="2"] .smartart-label { font-weight: 650; }
+.smartart-label {
+  padding: 0.1em 0.3em; text-align: center;
+  font-family: var(--font-kr); font-weight: 800;
+  color: var(--sa-ink, #fff); line-height: 1.15;
+  text-wrap: balance;
+  /* 박스 높이의 ~70~80%에서 시작, 글자수(--len)가 늘수록 폭 기준으로 자동 축소.
+     --sa-scale은 표 글자크기처럼 나중에 편집기에서 다이어그램별로 직접 조정할 배율(기본 1) — 상수로 박아두지 않음. */
+  font-size: clamp(0.72rem, calc(var(--sa-scale, 1) * min(32cqh, calc(170cqw / var(--len, 4)))), 2.8rem);
+}
+.sa-main { }
+.sa-sub { font-size: 0.62em; font-weight: 500; opacity: 0.85; margin-top: 0.25em; }
+</style>
+<div class="smartart-stage" id="sa1" style="--sa-ink:var(--ink-white); --sa-scale:1.0;">
+  <div class="smartart-node is-decor" data-lvl="0" style="left:10.00%; top:8.00%; width:84.00%; height:84.00%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:52.00%; top:20.50%; width:29.50%; height:59.00%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-mid));"><span class="smartart-label" style="--len:17;"><div class="sa-main">전문증거</div><div class="sa-sub">대화내용의 진실성이 증명의 대상</div><div class="sa-sub">대화의 의도 확인</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:8.00%; top:8.00%; width:84.00%; height:84.00%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:20.00%; top:20.50%; width:29.50%; height:59.00%; border-radius:10px; background:linear-gradient(135deg, var(--ink-white), var(--sea-bright));"><span class="smartart-label" style="--len:17;"><div class="sa-main">비전문증거</div><div class="sa-sub">간접사실에 대한 정황증거로 활용</div><div class="sa-sub">발언한 사실 자체를 입증</div></span></div>
+</div>
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-content" data-slide-type="content">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 34%;">
+    <span class="now">C.01</span>
+    <span class="total"> · 10/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-heading">
+      <div class="heading-en">우리가 카톡을 압수하는 게 가능한 이유</div>
+      <h2 class="heading-ko">포렌식 증거와 전문증거</h2>
+      <div class="heading-bar"></div>
+    </div>
+    <div class="content-side"></div>
+    <div class="content-body">
+      <ul><li>제313조(진술서등) ② 제1항 본문에도 불구하고 <strong>진술서</strong>의 작성자가 공판준비나 공판기일에서 그 성립의 진정을 부인하는 경우에는 <strong>과학적 분석결과에 기초한 디지털포렌식 자료, 감정 등 객관적 방법으로 성립의 진정함이 증명되는 때</strong>에는 증거로 할 수 있다.</li></ul><table class="pres-table"><thead><tr><th>피고인 발언</th><th>312조(수사 중)</th><th>313조(일상적)</th></tr></thead><tbody><tr><td>예시</td><td>피의자 신문조서 등 <b>수사기관</b> 작성</td><td>문자,영상,음성+본인, 남이 써준 진술서 등</td></tr><tr><td>포렌식 관련</td><td>포렌식과 관계없이 부인하면 증거능력 상실</td><td>부인할 때 포렌식을 통해 증거로 삼을 수 있음</td></tr><tr><td>비고</td><td>참고인 발언은 영상 녹화 등을 병행하여 입증 가능</td><td><b>수사기관에서</b> 본인 등이 작성, 제출한 진술서는 312조</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 50%;">
+    <span class="now">02</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">02</span>
+    </div>
+    <div class="chapter-title">전문증거와 전자증거</div>
+    <div class="divider"></div>
+    <div class="chapter-en"></div>
+  </div>
+
+  <div class="signature">section // 02 of 04</div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 41%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 12/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">생성증거와 보관증거</div>
+    <h2 class="heading-ko">전문증거와 비전문증거</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <!--smartart-src:eyJzbHVnIjogImNoYXJ0MyIsICJvdXRsaW5lIjogIuyghOusuOymneqxsCjrs7TqtIDspp3qsbApXG4gIOydjOyEsSwg66y47IScLCDsmIHsg4Eg65OxXG7ruYTsoITrrLjspp3qsbAo7IOd7ISx7Kad6rGwKVxuICDsi5zsiqTthZwg66Gc6re4LCDrjbDsnbTthLAg6rWs7KGw7LK0IOuTsVxuIiwgInNjaGVtZSI6IG51bGwsICJmb250X3NjYWxlIjogMS4wfQ==-->
+
+<style>
+.smartart-stage { position: relative; width: 100%; height: 100%; }
+.smartart-node {
+  position: absolute; box-sizing: border-box; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  container-type: size;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.smartart-node.is-decor { opacity: 0.55; box-shadow: none; }
+/* 상위(data-lvl=0)는 진하고 또렷하게, 하위로 갈수록 살짝 밝고 채도 낮게 + 그림자 약하게 — 위계가 눈에 보이도록 */
+.smartart-node[data-lvl="1"] { filter: brightness(1.12) saturate(0.85); box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+.smartart-node[data-lvl="2"] { filter: brightness(1.22) saturate(0.72); box-shadow: 0 1px 5px rgba(0,0,0,0.10); }
+.smartart-node[data-lvl="1"] .smartart-label, .smartart-node[data-lvl="2"] .smartart-label { font-weight: 650; }
+.smartart-label {
+  padding: 0.1em 0.3em; text-align: center;
+  font-family: var(--font-kr); font-weight: 800;
+  color: var(--sa-ink, #fff); line-height: 1.15;
+  text-wrap: balance;
+  /* 박스 높이의 ~70~80%에서 시작, 글자수(--len)가 늘수록 폭 기준으로 자동 축소.
+     --sa-scale은 표 글자크기처럼 나중에 편집기에서 다이어그램별로 직접 조정할 배율(기본 1) — 상수로 박아두지 않음. */
+  font-size: clamp(0.72rem, calc(var(--sa-scale, 1) * min(32cqh, calc(170cqw / var(--len, 4)))), 2.8rem);
+}
+.sa-main { }
+.sa-sub { font-size: 0.62em; font-weight: 500; opacity: 0.85; margin-top: 0.25em; }
+</style>
+<div class="smartart-stage" id="sa1" style="--sa-ink:var(--ink-white); --sa-scale:1.0;">
+  <div class="smartart-node is-decor" data-lvl="0" style="left:10.00%; top:8.00%; width:84.00%; height:84.00%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:52.00%; top:20.50%; width:29.50%; height:59.00%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-mid));"><span class="smartart-label" style="--len:12;"><div class="sa-main">전문증거(보관증거)</div><div class="sa-sub">음성, 문서, 영상 등</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:8.00%; top:8.00%; width:84.00%; height:84.00%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:20.00%; top:20.50%; width:29.50%; height:59.00%; border-radius:10px; background:linear-gradient(135deg, var(--ink-white), var(--sea-bright));"><span class="smartart-label" style="--len:17;"><div class="sa-main">비전문증거(생성증거)</div><div class="sa-sub">시스템 로그, 데이터 구조체 등</div></span></div>
+</div>
+    </div>
+    <div class="visual-caption">대법원 선고 99도2317 판결 등 참고</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 44%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 13/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">진술 사실 자체의 입증 vs 진술의 진위 입증</div>
+    <h2 class="heading-ko">대법원 선고 99도2317 판결</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-10-08_16-21-13.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 48%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 14/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">사람의 활동은 저장, PC의 행위를 생성</div>
+    <h2 class="heading-ko">생성증거, 보관증거. 용어가 어려워요?</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/images.jfif" style="width: 100%;">
+    </div>
+    <div class="visual-caption">Computer stored-generated evidence</div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 51%;">
+    <span class="now">C.02</span>
+    <span class="total"> · 15/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">생성증거와 보관증거</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <table class="pres-table"><thead><tr><th>구분</th><th>생성증거</th><th>보관증거</th></tr></thead><tbody><tr><td>수사목적</td><td>사용자 행위 프로파일링<br>ㅇ 접속기록, 생성-삭제 행위 등</td><td>범죄관련 직,간접증거<br>ㅇ 범죄공모 대화, 계획문서 등</td></tr><tr><td>증거유형</td><td>동작 기록, 임시파일, 메타데이터 등의 활동 흔적</td><td>데이터베이스, 멀티미디어 등 컨텐츠</td></tr><tr><td>포렌식 기술</td><td>아티팩트 분석, 구조체 분석, 메타데이터 분석 등</td><td>시각화, 복호화, 분류, 검색 등</td></tr><tr><td>특징</td><td>분석의 일관성, 대량 용이성, 포렌식 전문성</td><td>접근용이성, 분석의 주관성, 사건 이해도</td></tr></tbody></table>
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 75%;">
+    <span class="now">03</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">03</span>
+    </div>
+    <div class="chapter-title">전자증거의 특징</div>
+    <div class="divider"></div>
+    <div class="chapter-en"></div>
+  </div>
+
+  <div class="signature">section // 03 of 04</div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 58%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 17/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">많은 책, 책 번호, 대출기록</div>
+    <h2 class="heading-ko">도서관 전경</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/library05_img02.jpg">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 62%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 18/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">전자 증거의 특징</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <!--smartart-src:eyJzbHVnIjogImJMaXN0MiIsICJvdXRsaW5lIjogIuuzteygnOyaqeydtOyEsSjrp6TssrTrj4Xrpr3shLEpXG4gIOybkOuzuOqzvCDsgqzrs7jsnZgg7YyM7JWF7J20IOyWtOugpOybgFxu64yA65+J7ISxXG4gIOyekOujjOqwgCDrhIjrrLQg66eO7JWEIOyCrOqxtOqzvCDqtIDroKjrkJwg7Kad6rGw66W8IOywvuq4sOqwgCDslrTroKTsm4AgXG7ruYTqsIDsi5zshLFcbiAg7Yq57KCVIOyLnOyKpO2FnCDrmJDripQg7J6l67mEIOyXhuydtCDrgrTsmqnsnYQg67O8IOyImCDsl4bsnYxcbuuzgOyhsCDsmqnsnbTshLEo7Leo7JWF7ISxKVxuICDsnIQs67OA7KGwIOuQmOyXiOydhCDrlYwg7J2066W8IOyeheymne2VmOqxsOuCmCDsm5Ag64K07Jqp7J2EIOy2lOygge2VmOq4sCDslrTroKTsm4BcbuuEpO2KuOybjO2BrCDqtIDroKjshLEo7LSI6rWt6rK97ISxKVxuICDslZXsiJjsnqXshowsIOq0gO2VoOydtCDslr3tnojqsbDrgpgg66+4656Y7JeQIO2VtOuLuSDsoJXrs7Trpbwg7ZmV7J247ZWY6riwIOyWtOugpOybgFxu67O17J6h7ISxKOyghOusuOyEsSlcbiAg7KCV67O067O07JWIIO2WpeyDgSDrk7Eg7Kad6rGwIO2ajeuTneydtCDsi5zqsITsnbQg6rCI7IiY66GdIOyWtOugpOybjOynkCIsICJzY2hlbWUiOiBudWxsLCAiZm9udF9zY2FsZSI6IDEuM30=-->
+
+<style>
+.smartart-stage { position: relative; width: 100%; height: 100%; }
+.smartart-node {
+  position: absolute; box-sizing: border-box; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  container-type: size;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.smartart-node.is-decor { opacity: 0.55; box-shadow: none; }
+/* 상위(data-lvl=0)는 진하고 또렷하게, 하위로 갈수록 살짝 밝고 채도 낮게 + 그림자 약하게 — 위계가 눈에 보이도록 */
+.smartart-node[data-lvl="1"] { filter: brightness(1.12) saturate(0.85); box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+.smartart-node[data-lvl="2"] { filter: brightness(1.22) saturate(0.72); box-shadow: 0 1px 5px rgba(0,0,0,0.10); }
+.smartart-node[data-lvl="1"] .smartart-label, .smartart-node[data-lvl="2"] .smartart-label { font-weight: 650; }
+.smartart-label {
+  padding: 0.1em 0.3em; text-align: center;
+  font-family: var(--font-kr); font-weight: 800;
+  color: var(--sa-ink, #fff); line-height: 1.15;
+  text-wrap: balance;
+  /* 박스 높이의 ~70~80%에서 시작, 글자수(--len)가 늘수록 폭 기준으로 자동 축소.
+     --sa-scale은 표 글자크기처럼 나중에 편집기에서 다이어그램별로 직접 조정할 배율(기본 1) — 상수로 박아두지 않음. */
+  font-size: clamp(0.72rem, calc(var(--sa-scale, 1) * min(32cqh, calc(170cqw / var(--len, 4)))), 2.8rem);
+}
+.sa-main { }
+.sa-sub { font-size: 0.62em; font-weight: 500; opacity: 0.85; margin-top: 0.25em; }
+</style>
+<div class="smartart-stage" id="sa1" style="--sa-ink:var(--ink-white); --sa-scale:1.3;">
+  <div class="smartart-node" data-lvl="0" style="left:1.33%; top:2.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--sea-foam), var(--sea-bright));"><span class="smartart-label" style="--len:15;"><div class="sa-main">원본과 사본의 파악이 어려움</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:1.33%; top:31.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-mid));"><span class="smartart-label" style="--len:12;"><div class="sa-main">복제용이성(매체독립성)</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:1.33%; top:31.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:1.33%; top:2.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:34.67%; top:2.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-mid));"><span class="smartart-label" style="--len:29;"><div class="sa-main">자료가 너무 많아 사건과 관련된 증거를 찾기가 어려움</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:34.67%; top:31.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--sea-sky), var(--sea-bright));"><span class="smartart-label" style="--len:3;"><div class="sa-main">대량성</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:34.67%; top:31.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:34.67%; top:2.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:68.00%; top:2.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--sea-sky), var(--sea-bright));"><span class="smartart-label" style="--len:26;"><div class="sa-main">특정 시스템 또는 장비 없이 내용을 볼 수 없음</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:68.00%; top:31.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--ink-white), var(--sea-bright));"><span class="smartart-label" style="--len:4;"><div class="sa-main">비가시성</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:68.00%; top:31.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:68.00%; top:2.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:1.33%; top:52.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--ink-white), var(--sea-bright));"><span class="smartart-label" style="--len:34;"><div class="sa-main">위,변조 되었을 때 이를 입증하거나 원 내용을 추적하기 어려움</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:1.33%; top:81.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-deep));"><span class="smartart-label" style="--len:11;"><div class="sa-main">변조 용이성(취악성)</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:1.33%; top:81.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:1.33%; top:52.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:34.67%; top:52.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-deep));"><span class="smartart-label" style="--len:34;"><div class="sa-main">압수장소, 관할이 얽히거나 미래에 해당 정보를 확인하기 어려움</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:34.67%; top:81.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--sea-foam), var(--sea-bright));"><span class="smartart-label" style="--len:14;"><div class="sa-main">네트워크 관련성(초국경성)</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:34.67%; top:81.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:34.67%; top:52.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+  <div class="smartart-node" data-lvl="0" style="left:68.00%; top:52.00%; width:28.31%; height:29.90%; border-radius:10px; background:linear-gradient(135deg, var(--sea-foam), var(--sea-bright));"><span class="smartart-label" style="--len:29;"><div class="sa-main">정보보안 향상 등 증거 획득이 시간이 갈수록 어려워짐</div></span></div>
+  <div class="smartart-node" data-lvl="0" style="left:68.00%; top:81.90%; width:19.93%; height:12.86%; border-radius:10px; background:linear-gradient(135deg, var(--sea-bright), var(--sea-mid));"><span class="smartart-label" style="--len:8;"><div class="sa-main">복잡성(전문성)</div></span></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:68.00%; top:81.90%; width:28.31%; height:12.86%; border-radius:10px; background:var(--sea-sky);"></div>
+  <div class="smartart-node is-decor" data-lvl="0" style="left:68.00%; top:52.00%; width:9.91%; height:14.86%; border-radius:50%; background:var(--sea-sky);"></div>
+</div>
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 65%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 19/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식을 방해하는 현장 요소</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-10-08_15-57-19.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 68%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 20/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식을 방해하는 현장 요소</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림7.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 72%;">
+    <span class="now">C.03</span>
+    <span class="total"> · 21/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식을 방해하는 현장 요소</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-10-08_16-00-29.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-chapter" data-slide-type="chapter">
+
+  <div class="wordmark">CHAPTER</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 100%;">
+    <span class="now">04</span>
+    <span class="total"> / 04</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="chapter-figure"></div>
+
+  <div class="main">
+    <div class="chapter-kicker">
+      <span class="label">Chapter</span>
+      <span class="num">04</span>
+    </div>
+    <div class="chapter-title">디지털 포렌식의 목표</div>
+    <div class="divider"></div>
+    <div class="chapter-en"></div>
+  </div>
+
+  <div class="signature">section // 04 of 04</div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 79%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 23/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식의 5원칙</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림1.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 82%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 24/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식의 5원칙</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림2.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 86%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 25/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">디지털 포렌식의 신뢰성에 대한 판례의 입장</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림3.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 89%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 26/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">신뢰형성을 위한 환경 조성</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/Snipaste_2026-10-08_16-51-19.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-visual" data-slide-type="visual">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 93%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 27/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="visual-head">
+    <div class="heading-en">수업 내용은 변동될 수 있습니다</div>
+    <h2 class="heading-ko">예고: 디지털 포렌식 기술 소개</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="visual-stage">
+    <div class="visual-figure">
+      <img src="images/그림5.png">
+    </div>
+    <div class="visual-caption"></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-qa" data-slide-type="qa">
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="progress-tr" style="--progress-pct: 96%;">
+    <span class="now">C.04</span>
+    <span class="total"> · 28/29</span>
+    <div class="bar"></div>
+  </div>
+
+  <div class="qa-head">
+    <div class="heading-en"></div>
+    <h2 class="heading-ko">FnQ</h2>
+    <div class="heading-bar"></div>
+  </div>
+
+  <div class="qa-list">
+    <div class="qa-item"><p class="q">오늘 수업 내용의 참고자료는?</p><p class="a">녹음테이프와 녹취록, 녹취진술의 증거능력에 대한 실무적 고찰(2021, 김정한, 영남대학교), 형사소송에서 증거로 활용되는 녹음파일 등에 관한 실무상 문제점에 대한 소고(2018, 김동원, 청주지원 판사), 수사기관의 정보보안솔루션 압수수색 방법 연구(2023, 이은정, 서울대학교) 등</p></div>
+  </div>
+
+  <div class="footer-note"></div>
+
+</section>
+
+<section class="slide type-closing" data-slide-type="closing">
+
+  <div class="wordmark">END</div>
+  <div class="bubbles"></div>
+
+  <div class="meta-tl">
+    <div class="title">디지털포렌식과 형사소송법</div>
+    <div class="sub">제5장 전문법칙과 전문증거</div>
+  </div>
+
+  <div class="closing-hero">
+    <h1 class="closing-ko">감사합니다</h1>
+    <div class="divider"></div>
+    <div class="closing-en">Thank You</div>
+    <p class="closing-prompt">질문을 환영합니다 · Q&A</p>
+    <div class="closing-contact"></div>
+  </div>
+
+  <div class="signature"></div>
+
+</section>
+
+</div>
+
+<div class="nav">
+  <button onclick="navSlide(-1)">◀ PREV</button>
+  <span id="nav-indicator">1 / 29</span>
+  <button onclick="navSlide(1)">NEXT ▶</button>
+</div>
+
+<script>
+  function fitCanvas() {
+    const CW = 1600, CH = 900;
+    const scale = Math.min(window.innerWidth / CW, window.innerHeight / CH);
+    document.documentElement.style.setProperty('--canvas-scale', scale);
+    const aspect = window.innerWidth / window.innerHeight;
+    const boost = aspect < 1 ? 1.35 : (aspect < 1.3 ? 1.15 : 1);
+    document.documentElement.style.setProperty('--auto-boost', boost);
+  }
+  window.addEventListener('resize', fitCanvas);
+  fitCanvas();
+
+  let current = 0;
+  const slides = document.querySelectorAll('.deck > .slide');
+  function show(i) {
+    // 한 프레임 동안 active 클래스를 모두 제거 후 재부여 → CSS 애니메이션 재발동
+    slides.forEach(s => s.classList.remove('active'));
+    void slides[i].offsetWidth; // 강제 reflow
+    slides[i].classList.add('active');
+    document.getElementById('nav-indicator').textContent = `${i+1} / ${slides.length}`;
+  }
+  function navSlide(d) {
+    current = (current + d + slides.length) % slides.length;
+    show(current);
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') navSlide(1);
+    if (e.key === 'ArrowLeft') navSlide(-1);
+  });
+  show(0);
+</script>
+
+</body>
+</html>

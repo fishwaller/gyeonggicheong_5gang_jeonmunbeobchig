@@ -10,7 +10,7 @@
   "slides": [
     {
       "author": "부산지방고용노동청 광역노동기준감독과",
-      "date": "2026.00.00",
+      "date": "2026.10.12",
       "kicker": "PRESENTATION",
       "signature": "",
       "subtitle": "피의자가 법정에서 직접 발언하지 않은 진술의 증거능력",
@@ -102,12 +102,12 @@
       "type": "visual"
     },
     {
-      "type": "visual",
-      "heading_ko": "대법원 선고 99도2317 판결",
-      "heading_en": "진술 사실 자체의 입증 vs 진술의 진위 입증",
-      "figure_html": "<img src=\"images/Snipaste_2026-10-08_16-21-13.png\">",
       "caption": "",
-      "footer_note": ""
+      "figure_html": "<img src=\"images/Snipaste_2026-10-08_16-21-13.png\">",
+      "footer_note": "",
+      "heading_en": "진술 사실 자체의 입증 vs 진술의 진위 입증",
+      "heading_ko": "대법원 선고 99도2317 판결",
+      "type": "visual"
     },
     {
       "caption": "Computer stored-generated evidence",
@@ -149,12 +149,12 @@
       "type": "visual"
     },
     {
-      "type": "visual",
-      "heading_ko": "디지털 포렌식을 방해하는 현장 요소",
-      "heading_en": "",
-      "figure_html": "<img src=\"images/Snipaste_2026-10-08_15-57-19.png\">",
       "caption": "",
-      "footer_note": ""
+      "figure_html": "<img src=\"images/Snipaste_2026-10-08_15-57-19.png\">",
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "디지털 포렌식을 방해하는 현장 요소",
+      "type": "visual"
     },
     {
       "caption": "",
@@ -165,66 +165,66 @@
       "type": "visual"
     },
     {
-      "type": "visual",
-      "heading_ko": "디지털 포렌식을 방해하는 현장 요소",
-      "heading_en": "",
+      "caption": "",
       "figure_html": "<img src=\"images/Snipaste_2026-10-08_16-00-29.png\">",
-      "caption": "",
-      "footer_note": ""
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "디지털 포렌식을 방해하는 현장 요소",
+      "type": "visual"
     },
     {
-      "type": "chapter",
-      "title_ko": "디지털 포렌식의 목표",
-      "title_en": "",
       "chapter_figure": "",
-      "signature": "section // {{chapter_num}} of {{chapter_total}}"
+      "signature": "section // {{chapter_num}} of {{chapter_total}}",
+      "title_en": "",
+      "title_ko": "디지털 포렌식의 목표",
+      "type": "chapter"
     },
     {
-      "type": "visual",
-      "heading_ko": "디지털 포렌식의 5원칙",
-      "heading_en": "",
+      "caption": "",
       "figure_html": "<img src=\"images/그림1.png\">",
-      "caption": "",
-      "footer_note": ""
-    },
-    {
-      "type": "visual",
+      "footer_note": "",
+      "heading_en": "",
       "heading_ko": "디지털 포렌식의 5원칙",
-      "heading_en": "",
+      "type": "visual"
+    },
+    {
+      "caption": "",
       "figure_html": "<img src=\"images/그림2.png\">",
-      "caption": "",
-      "footer_note": ""
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "디지털 포렌식의 5원칙",
+      "type": "visual"
     },
     {
-      "type": "visual",
-      "heading_ko": "디지털 포렌식의 신뢰성에 대한 판례의 입장",
-      "heading_en": "",
+      "caption": "",
       "figure_html": "<img src=\"images/그림3.png\">",
-      "caption": "",
-      "footer_note": ""
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "디지털 포렌식의 신뢰성에 대한 판례의 입장",
+      "type": "visual"
     },
     {
-      "type": "visual",
-      "heading_ko": "신뢰형성을 위한 환경 조성",
-      "heading_en": "",
+      "caption": "",
       "figure_html": "<img src=\"images/Snipaste_2026-10-08_16-51-19.png\">",
-      "caption": "",
-      "footer_note": ""
-    },
-    {
-      "type": "visual",
-      "heading_ko": "예고: 디지털 포렌식 기술 소개",
-      "heading_en": "수업 내용은 변동될 수 있습니다",
-      "figure_html": "<img src=\"images/그림5.png\">",
-      "caption": "",
-      "footer_note": ""
-    },
-    {
-      "type": "qa",
-      "heading_ko": "FnQ",
+      "footer_note": "",
       "heading_en": "",
+      "heading_ko": "신뢰형성을 위한 환경 조성",
+      "type": "visual"
+    },
+    {
+      "caption": "",
+      "figure_html": "<img src=\"images/그림5.png\">",
+      "footer_note": "",
+      "heading_en": "수업 내용은 변동될 수 있습니다",
+      "heading_ko": "예고: 디지털 포렌식 기술 소개",
+      "type": "visual"
+    },
+    {
+      "footer_note": "",
+      "heading_en": "",
+      "heading_ko": "FnQ",
       "qa_html": "<div class=\"qa-item\"><p class=\"q\">오늘 수업 내용의 참고자료는?</p><p class=\"a\">녹음테이프와 녹취록, 녹취진술의 증거능력에 대한 실무적 고찰(2021, 김정한, 영남대학교), 형사소송에서 증거로 활용되는 녹음파일 등에 관한 실무상 문제점에 대한 소고(2018, 김동원, 청주지원 판사), 수사기관의 정보보안솔루션 압수수색 방법 연구(2023, 이은정, 서울대학교) 등</p></div>",
-      "footer_note": ""
+      "type": "qa"
     },
     {
       "closing_en": "Thank You",
